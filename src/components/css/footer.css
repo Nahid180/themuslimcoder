@@ -1,0 +1,28 @@
+.footer-container{
+    width: 100%;
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 40px 0px 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #6c757d;
+}
+
+.social-links{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.social-links i{
+    margin: 5px;
+    cursor: pointer;
+}
+.social-links i:hover{
+    color: #505558;
+}
+.other-links ul{
+    list-style: none;
+    display: inline-block;
+}
+.other-links ul li{
+    display: inline-block;
+    margin: 10px;
+}

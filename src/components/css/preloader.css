@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(/src/components/fonts/helvetica-rounded-bold-5871d05ead8de.otf);
+    font-display: swap;
+}
+
+
+.loader-body{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 9999999999999;
+}
+
+.loader-content .quote{
+    font-family: Helvetica;
+    margin: auto;
+    margin-top: 30px;
+    color: #374151;
+}
+.loader-content .writer{
+    text-align: right;
+    color: #374151;
+    font-family: Helvetica;
+    margin-top: 10px;
+}
+
+.loader-content img{
+    margin: auto;
+}
+
+@media (max-width:600px){
+    .loader-content .writer,.loader-content .quote{
+        font-size: 10px;
+    }
+
+
+}

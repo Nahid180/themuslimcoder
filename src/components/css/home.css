@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(/src/components/fonts/helvetica-rounded-bold-5871d05ead8de.otf);
+    font-display: swap;
+}
+
+.image-container{
+    width: 100%;
+    height: 92vh;
+    background: linear-gradient(rgba(0,0,0,0.5),transparent),url(/src/components/images/coding.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+    
+}
+.down-arrow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -5px;
+}
+.down-arrow img{
+    cursor: pointer;
+}
+.post-title{
+    text-align: center;
+    font-family: Sora;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.image-text-box{
+    font-family: Helvetica;
+    color: white;
+    position: absolute;
+    bottom: 30%;
+    left: 40px;
+}
+.image-text-box p{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.image-text-box h1{
+    font-size: 90px;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(/src/components/images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.image-text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    
+}
+.image-container .image-text-box a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    border: solid 2px white;
+    padding: 10px 30px 10px 30px;
+    
+}
+.mob-textbox{
+    text-align: center;
+    font-family: Helvetica;
+    margin-top: 50px;
+    display: none;
+    padding: 10px 45px 10px 45px;
+    margin-bottom: 80px;
+    
+}
+.mob-textbox h1{
+    margin-bottom: 20px;
+    color: #1292ee;
+}
+
+
+.mob-textbox p{
+    margin-bottom: 20px;
+    color: #6b7280;
+    font-family: Sora;
+    font-weight: lighter;
+}
+.mob-textbox a{
+    color: #1292ee;
+    border: solid 2px #1292ee;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px 15px 5px 15px;
+    font-size: 10px;
+}
+
+@media (max-width:858px){
+    .mob-textbox{
+        display: block;
+        transform: scale(1.05);
+    }
+}
+@media (max-width:530px){
+    .post-title{
+        font-size: 30px;
+    }
+}
+@media (max-width:420px){
+   
+    .post-title{
+        font-size: 25px;
+    }
+}
