@@ -99,7 +99,7 @@ function Navbar() {
         <label htmlFor='check' className="checkbtn">
           <i className='fas fa-bars'></i>
         </label>
-        <label className='nav-label'><Link to={'/'}>Articles About Coding</Link></label>
+        <label className='nav-label'><Link to={'/'}>The Muslim Coder</Link></label>
         <ul className='nav-links'>
           <li><Link to='/'><span>Home</span></Link></li>
           <li><Link to='/about'><span>About</span></Link></li>

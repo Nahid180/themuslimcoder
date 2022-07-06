@@ -25,7 +25,7 @@ function Home() {
         $('.loader-body').fadeToggle(1000)
         setTimeout(() => {
           setLoaderstate(false);
-          document.title = "Home | Articles About Coding";
+          document.title = "Home | The Muslim Coder";
         }, 1000);
 
       }
@@ -46,7 +46,7 @@ function Home() {
         <div className="image-container">
           <div className="image-text-box">
             <p>Welcome To The</p>
-            <h1>Articles About Coding</h1>
+            <h1>The Muslim Coder</h1>
             <h3>Love Coding and Explore Coding!</h3>
             <Link to='/about'>Explore Articles</Link>
             <Link to='/contact/123344'>Connect With Me <i className="fa-solid fa-arrow-right-long"></i></Link>
