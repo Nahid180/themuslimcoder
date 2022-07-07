@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/themuslimcoder/static/css/main.0ffa298c.css",
-    "main.js": "/themuslimcoder/static/js/main.615d085b.js",
+    "main.js": "/themuslimcoder/static/js/main.0c321e35.js",
     "static/js/787.56a29bc1.chunk.js": "/themuslimcoder/static/js/787.56a29bc1.chunk.js",
     "static/media/coding.jpg": "/themuslimcoder/static/media/coding.ee4ba4f5c8af075bea39.jpg",
     "static/media/Sora.ttf": "/themuslimcoder/static/media/Sora.461555370e041e3eab2d.ttf",
@@ -9,11 +9,11 @@
     "static/media/helvetica-rounded-bold-5871d05ead8de.otf": "/themuslimcoder/static/media/helvetica-rounded-bold-5871d05ead8de.df374f732d8d59ef5980.otf",
     "index.html": "/themuslimcoder/index.html",
     "main.0ffa298c.css.map": "/themuslimcoder/static/css/main.0ffa298c.css.map",
-    "main.615d085b.js.map": "/themuslimcoder/static/js/main.615d085b.js.map",
+    "main.0c321e35.js.map": "/themuslimcoder/static/js/main.0c321e35.js.map",
     "787.56a29bc1.chunk.js.map": "/themuslimcoder/static/js/787.56a29bc1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ffa298c.css",
-    "static/js/main.615d085b.js"
+    "static/js/main.0c321e35.js"
   ]
 }
