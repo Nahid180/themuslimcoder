@@ -19,7 +19,7 @@ function Articles() {
   const { id } = useParams();
   const [data, setdata] = useState([{}]);
   const [loaderstate, setLoaderstate] = useState(true);
-  const url = `https://articlesaboutcoding-end.herokuapp.com/get/${id}`
+  const url = `https://themuslimcoder-api.herokuapp.com/get/${id}`
   //const url = `http://localhost:5000/get/${id}`
 
   useEffect(() => {

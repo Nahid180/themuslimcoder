@@ -15,7 +15,7 @@ function Home() {
   const [loaderstate, setLoaderstate] = useState(true);
   const [data, setdata] = useState([{}]);
   //const url="http://127.0.0.1:5000/get_all"
-  const url = "https://articlesaboutcoding-end.herokuapp.com/get_all"
+  const url = "https://themuslimcoder-api.herokuapp.com/get_all"
   useEffect(() => {
     fetch(url).then(
       res => res.json()
