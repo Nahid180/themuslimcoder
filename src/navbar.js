@@ -30,7 +30,7 @@ function Navbar() {
     //setting the subscribe button state to loading because creatin process has started
     setsubcribeState('loadingVisible')
     //sending a post method to backend using "formvalue" state and fetch api
-    fetch('https://articlesaboutcoding-end.herokuapp.com/create_subscriber', {
+    fetch('https://themuslimcoder-api.herokuapp.com/create_subscriber', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
