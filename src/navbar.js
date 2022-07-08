@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import './components/css/navbar.css'
 import { Link } from 'react-router-dom';
-
+import Cookie from 'js-cookie';
 
 
 function Navbar() {
@@ -24,6 +24,15 @@ function Navbar() {
     ) : (
       setsubcribeState("failed")
     )
+  }
+  //a function to save a cookie when the user subscribes. This will increase user experience by not showing subscribe popup every time when he visits.
+  const setCookie = (cookiename, usrin) => {
+    Cookie.set(cookiename, usrin, {
+      expires: 365,
+      secure: true,
+      sameSite: 'strict'
+    })
+
   }
   //a function to add the subscriber in database
   const CreateSubscriber = () => {
@@ -47,6 +56,7 @@ function Navbar() {
       data => {
         //passing the response to "handleSubmission" to change the state of subcribe button to "Done" or "Failed"
         handleSubmission(data.response);
+        setCookie('subEmail',formvalue);
         //removing the form from window and setting it to it's default condition
         setTimeout(() => {
           setVisible(false)
@@ -57,7 +67,7 @@ function Navbar() {
     )
   }
   //the frontend
-  //<input type="submit" onClick={() => { CreateSubscriber() }} value="Subscribe" className="subscribe" />
+
   return (
     <div>
       {

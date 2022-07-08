@@ -15,8 +15,8 @@ function Home() {
   const [loaderstate, setLoaderstate] = useState(true);
   const [data, setdata] = useState([{}]);
   //const url="http://127.0.0.1:5000/get_all"
-  const url = "https://themuslimcoder-api.herokuapp.com/get_all"
   useEffect(() => {
+    const url = "https://themuslimcoder-api.herokuapp.com/get_all"
     fetch(url).then(
       res => res.json()
     ).then(
@@ -73,7 +73,7 @@ function Home() {
             ) : (
               data.recent_articles.map((article, i) => {
                 return (
-                  <Link to={`/article/${article.id}/${article.title.replaceAll(" ", "-")}`}><Card title={article.title} description={article.description} banner={article.banner} date={article.date} topic={article.language} read={article.read_time} key={i} /></Link>
+                  <Link to={`/article/${article.id}/${article.title.replaceAll(" ", "-")}`} key={`link${i}`}><Card title={article.title} description={article.description} banner={article.banner} date={article.date} topic={article.language} read={article.read_time} key={i} /></Link>
                 )
               })
             )
@@ -90,7 +90,7 @@ function Home() {
             ) : (
               data.recent_articles.map((article, i) => {
                 return (
-                  <Link to={`/article/${article.id}/${article.title.replaceAll(" ", "-")}`}><Card title={article.title} description={article.description} banner={article.banner} date={article.date} topic={article.language} read={article.read_time} key={i} /></Link>
+                  <Link to={`/article/${article.id}/${article.title.replaceAll(" ", "-")}`} key={`link${i}`}><Card title={article.title} description={article.description} banner={article.banner} date={article.date} topic={article.language} read={article.read_time} key={i} /></Link>
                 )
               })
             )
@@ -106,7 +106,7 @@ function Home() {
             ) : (
               data.recent_articles.map((article, i) => {
                 return (
-                  <Link to={`/article/${article.id}/${article.title.replaceAll(" ", "-")}`}><Card title={article.title} description={article.description} banner={article.banner} date={article.date} topic={article.language} read={article.read_time} key={i} /></Link>
+                  <Link to={`/article/${article.id}/${article.title.replaceAll(" ", "-")}`} key={`link${i}`}><Card title={article.title} description={article.description} banner={article.banner} date={article.date} topic={article.language} read={article.read_time} key={i} /></Link>
                 )
               })
             )

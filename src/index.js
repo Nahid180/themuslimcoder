@@ -20,7 +20,6 @@ root.render(
         <Route path="/signup" element={<Signup />} />
         <Route path="/loader" element={<Preloader />} />
         <Route path="/contact/:id" element={<Contact />} />
-        
       </Routes>
     </HashRouter>
   </React.StrictMode>
